@@ -8,7 +8,13 @@ class Usuario(models.Model):
         deSenha = models.CharField(max_length=10)
         flAtivo = models.BooleanField()
 
+        class Meta:
+            abstract = True
+
         def __unicode__(self):
             return self.deUsuario
 
 
+class Teste(Usuario):
+
+        deTeste = models.CharField(max_length=23)

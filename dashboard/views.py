@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-     
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-	return render(request, 'index.html')
+           return render(request, 'index.html')
 
 def config(request):
 	return render(request, 'config.html')
